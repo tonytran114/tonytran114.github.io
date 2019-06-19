@@ -5,4 +5,4 @@ Learning HTML CSS and SaS by making a portfolio website
 
 ## Disclaimer
 
-Using templates found at  [Documentation](https://html5up.net/)
+Using templates found at  [HTML5Up](https://html5up.net/)
