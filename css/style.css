@@ -23,7 +23,7 @@ body a {
 }
 
 .about {
-	background: #4b979c;
+	background: #fff;
 }
 
 a:hover {
@@ -282,8 +282,8 @@ h3.tittle {
 }
 
 .sub-tittle {
-	font-size: 0.4em;
-	color: #fc427b;
+	font-size: 20px;
+	color: #000;
 	font-weight: 700;
 	letter-spacing: 2px;
 	display: block;
@@ -323,7 +323,7 @@ h3.tittle {
 
 .bottom-gd:hover,
 .bottom-gd2-active {
-	background: #fff !important;
+	background: #5fb2b7 !important;
 	transition: 2s all;
 	-webkit-transition: 2s all;
 	-moz-transition: 2s all;
@@ -1416,7 +1416,7 @@ ul.links li a:hover {
 }
 
 .cpy-right {
-	background: #1c1d21;
+	background: #fff;
 }
 
 .cpy-right p,

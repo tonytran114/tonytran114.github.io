@@ -3,24 +3,14 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
+
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <!-- Hotjar Tracking Code for www.moonshotwearables.com -->
-    <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-            h._hjSettings = { hjid: 1532444, hjsv: 6 };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script'); r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
     <title>Moonshot Wearables Inc</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Moonshot Wearables Inc,Anemia, Anaemia, care management, blood testing, detection, diagnostic health information, clinical treatments, WHO, monitoring, aplastic, iron deficiency, sickle cell, thalassemia, vitamin deficiency" />
+  <meta name="keywords" content="Moonshot Wearables Inc,Anemia, Anaemia, care management, blood testing, detection, diagnostic health information, clinical treatments, WHO, monitoring, aplastic, iron deficiency, sickle cell, thalassemia, vitamin deficiency" />
     <script>
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -39,7 +29,6 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/aos.css">
     <link href='css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
-
     <!-- Style-CSS -->
     <!-- font-awesome-icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -50,16 +39,66 @@
     <!-- //Fonts -->
 
 </head>
+<?php
+$flag="";
+if($_POST['submit']=='Submit')
+{   
 
+
+  // $to = "mail@orbiz.in";
+   
+   $sub="Enquiry ";
+   $body="<table width='517' border='0' cellpadding='2' cellspacing='2'>
+        
+        <tr>
+          <td width='161'><strong>Name </strong></td>
+          <td width='342'><label>".$_POST['name']."</label></td>
+        </tr>
+        <tr>
+          <td><strong>Email</strong></td>
+          <td><label></label>".$_POST['email']."</td>
+        </tr>
+       
+       	<tr>
+          <td><strong>Phone </strong></td>
+          <td>".$_POST['phone']."</td>
+        </tr>
+			<tr>
+          <td><strong>Subject </strong></td>
+          <td>".$_POST['subject']."</td>
+        </tr>
+		<tr>
+          <td><strong>Message </strong></td>
+          <td>".$_POST['message']."</td>
+        </tr>
+		
+      </table>";
+$to="chris.nyers@moonshotwearables.com";
+
+
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$headers .= 'From: admin@moonshotwearables.com' . "\r\n" .
+    'Reply-To: mail@moonshotwearables.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+// Mail it
+@$flag1=mail($to, $sub, $body, $headers);
+
+$flag="Thank you for contacting us ";
+
+
+   
+}
+
+?>
 <body>
-
-
 
 
     <!-- mian-content -->
     <div class="main-content" id="home">
         <!-- header -->
-        <header class="py-1">
+          <header class="py-1">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <h1>
@@ -69,7 +108,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-4 m-auto">
 						   <li class="nav-item active">
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -82,7 +121,7 @@
                                 <a class="nav-link" href="news.html">News</a>
                             </li>
 							
-						
+							
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
@@ -96,129 +135,43 @@
             </div>
         </header>
         <!-- //header -->
-        <!-- banner-w3layouts -->
-        <section class="banner-w3layouts">
-            <div  class="col-lg-12 banner-w3layouts-info" >
-                <div class=" banner-w3layouts-grids">
-                    <div>
-                        <h2 class="text-center" >Moonshot Wearables
-                        </h2>
-                     
-                        <p class="mb-4 text-center" style="color:#fff" data-aos="fade-up"> Innovative, Intelligent Digital Health Solutions </p>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>
-        <!-- //banner-w3layouts -->
     </div>
     <!--/ab -->
-    <section class="about py-lg-5 py-md-5 py-3">
-        <div class="container">
-            <!---728x90--->
 
-            <div class="inner-sec-wthree py-lg-5 py-3">
-                <h3 class="tittle text-uppercase text-center mb-lg-5 mb-3"><span class="sub-tittle">WHY US.</span> Creativity has no Boundaries</h3>
-                <div class="feature-grids row mb-lg-5 mb-3">
+
+    <!-- banner-w3layouts -->
+    <section class="ab-info-main py-md-5 py-5">
+        <div class="container py-md-5 py-5">
+            <div class="ab-info-grids pt-md-5 pt-3">
+                <div class="contact-info pt-md-5 pt-0 text-center">
+                    <!---728x90--->
+
+                    <h3 class="tittle text-uppercase text-center mb-lg-5 mb-3 inner-tittle"><span class="sub-tittle">Join the  
+</span>  Moonshot Wearables Team</h3>
+                    <!---728x90--->
                  
-   <p style="font-size:16px;">
-	We are philanthropreneurs…taking an entrepreneurial approach to improving the quality of life for billions of people.  We want to recruit others who want to leave their mark on the world and create a legacy that’s great than the sum of our parts
- </p>   
-                 
-                  
+                    <div class="contact-form mt-md-5">
+                        <div class="contact-form-inner mx-auto text-left">
+                        <span class="sub-tittle">   <?php echo $flag ?> </span>
+                            <div class="map mt-md-5" data-aos="fade-up">
 
-                </div>
-				
-				</div>
-				</div>
-			</section>	
-				
-		  <section class="inner-w3layouts">
-            <div  class="col-lg-12 " style="color:#fff" >
-                <div class=" banner-w3layouts-grids">
-                    <div>
-                        <h2 class="text-center" >Moonshot Wearables was created to the do the impossible
-                        </h2>
-                     
-                        <p class="mb-4 text-center" style="color:#fff" data-aos="fade-up"> Impact the lives of billions of people with our innovative, intelligent digital care solutions. </p>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>
-				
-			<section class="about py-lg-5 py-md-5 py-3">
-        <div class="container">
-            <!---728x90--->
-
-            <div class="inner-sec-wthree py-lg-5 py-3">	
-				
-                <!-- services -->
-                <div class="fetured-info pt-lg-5">
-                    <h3 class="tittle text-uppercase text-center my-lg-5 my-3"><span class="sub-tittle">Problem</span> </h3>
-					
-					
-					
-                    <div class="row fetured-sec mt-lg-5">
-
-                        <div class="col-lg-6 serv_bottom">
-                            <div class="featured-left text-center">
-                                <div class="bottom-gd fea p-5 my-3" data-aos="fade-left">
-                                    <span class="fa fa-lightbulb-o" aria-hidden="true"></span>
-                                 
-                                    <p class="px-lg-3">According to the World Health Organization (WHO), 25% of the world’s population suffers from anemia, a deficiency in red blood cells or hemoglobin, both of which are necessary to transport oxygen to sustain life.</p>
-                                </div>
-                               
-                            </div>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.1322514693024!2d-78.79919138526587!3d35.821230780161926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf22bbfad5419%3A0x6d263fff4a42c9c9!2s111%20Montauk%20Point%20Pl%2C%20Cary%2C%20NC%2027513%2C%20USA!5e0!3m2!1sen!2sin!4v1577564261826!5m2!1sen!2sin"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
-                        <div class="col-lg-6 p-0">
-                            <img src="images/img1.jpg" class="img-fluid" alt="">
-                        </div>
+
                     </div>
-                </div>
-                <!-- //services -->
-            </div>
-        </div>
-    </section>
-    <!-- //ab -->
-    <!--/counter-->
-    <section class="stats py-lg-5 py-4">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number" data-to="100" data-speed="1500"></h3>
-                        <p class="count-text ">Support</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number" data-to="1700" data-speed="1500"></h3>
-                        <p class="count-text ">Happy Hours</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number" data-to="11900" data-speed="1500"></h3>
-                        <p class="count-text ">Project Complete</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="counter">
-                        <h3 class="timer count-title count-number" data-to="157" data-speed="1500"></h3>
-                        <p class="count-text ">Cups of Coffee</p>
-                    </div>
+
+
+
                 </div>
             </div>
         </div>
     </section>
-    <!--//counter-->
-   
-  
- 
+    <!-- //banner-w3layouts -->
+    <!---728x90--->
 
- 
     <!--footer -->
+	<!-- Footer -->
+ <!--footer -->
     <footer>
         <section class="footer footer_1its py-5">
             <div class="container py-md-4">
@@ -229,7 +182,7 @@
                         <a href="index-2.html" class="text-uppercase"> <img src="images/logo.png" alt="" class="img-fluid image1"></a>
                     </div>
                    
-                    <ul class="social_section_1info" data-aos="fade-up">
+                      <ul class="social_section_1info" data-aos="fade-up">
                        
                         <li class="mb-2 twitter"><a href="#"><i class="fa fa-twitter mr-1"></i>twitter</a></li>
                        
@@ -241,10 +194,10 @@
         </section>
     </footer>
     <!-- //footer -->
-
+    <!-- //footer -->
     <!-- copy-w3layoutsright -->
     <div class="cpy-right text-center py-3">
-        <p class="copy-w3layouts">©  Copyright 2019 | Moonshot Wearables | 111 Montauk Point Place, Cary, NC 27513 |  Email Us (<a href="mailto:chris.nyers@moonshotwearables.com">chris.nyers@moonshotwearables.com</a>)
+          <p class="copy-w3layouts">©  Copyright 2019 | Moonshot Wearables | 111 Montauk Point Place, Cary, NC 27513 | Email Us (<a href="mailto:chris.nyers@moonshotwearables.com">chris.nyers@moonshotwearables.com</a>)
             
         </p>
     </div>
@@ -259,9 +212,6 @@
         });
     </script>
     <!--//aos -->
-    <!--/counter-->
-    <script src="js/counternew.js"></script>
-    <!--//counter-->
     <!--/ start-smoth-scrolling -->
     <script src="js/move-top.js"></script>
     <script src="js/easing.js"></script>
@@ -295,8 +245,6 @@
 		
 		
 		
-		
-		
 				$(function(){
     $('#header_nav').data('size','big');
 });
@@ -323,10 +271,6 @@ $(window).scroll(function(){
         }  
     }
 });
-		
-		
-		
-		
 		
 		
     </script>
